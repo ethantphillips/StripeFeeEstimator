@@ -1,0 +1,53 @@
+{
+  "name": "stripe-fee-estimator",
+  "version": "1.1.0",
+  "description": "Estimate Stripe processing fees, reverse-calculate gross charges, and use custom fee presets from the CLI or as a JavaScript library.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js"
+  },
+  "bin": {
+    "stripe-fee-estimator": "bin/cli.js",
+    "stripe-fees": "bin/cli.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node bin/cli.js",
+    "demo": "node bin/cli.js 100 --online --international",
+    "prepack": "node --test",
+    "pack:dry": "npm pack --dry-run"
+  },
+  "keywords": [
+    "stripe",
+    "stripe-fees",
+    "fees",
+    "calculator",
+    "payments",
+    "payment-processing",
+    "fintech",
+    "cli",
+    "fee-estimator",
+    "gross-up"
+  ],
+  "author": "Open Tech Academy",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethantphillips/stripefeeestimator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ethantphillips/stripefeeestimator/issues"
+  },
+  "homepage": "https://github.com/ethantphillips/stripefeeestimator#readme"
+}
